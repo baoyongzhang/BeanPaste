@@ -10,4 +10,12 @@
     <string name="action_example">Example action</string>
     <string name="action_settings">Settings</string>
 
+    <array name="navigation_drawer_sections">
+        <item>TOP250</item>
+        <item>北美票房榜</item>
+        <item>设置</item>
+    </array>
+
+    <string name="hello_blank_fragment">Hello blank fragment</string>
+
 </resources>

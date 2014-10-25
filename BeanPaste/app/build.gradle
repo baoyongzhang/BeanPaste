@@ -1,3 +1,21 @@
+buildscript {
+    repositories {
+        jcenter()
+    }
+    dependencies {
+        classpath 'com.android.tools.build:gradle:0.13.0'
+
+        // NOTE: Do not place your application dependencies here; they belong
+        // in the individual module build.gradle files
+    }
+}
+
+allprojects {
+    repositories {
+        jcenter()
+    }
+}
+
 apply plugin: 'com.android.application'
 
 android {
@@ -22,4 +40,14 @@ android {
 dependencies {
     compile fileTree(dir: 'libs', include: ['*.jar'])
     compile 'com.android.support:support-v4:21.0.0'
+    compile 'com.squareup.retrofit:retrofit:1.7.0'
+    compile 'com.jakewharton:butterknife:5.1.+'
+    provided 'com.jakewharton:butterknife:5.1.+'
+    compile 'com.squareup.dagger:dagger:1.2.+'
+    provided 'com.squareup.dagger:dagger-compiler:1.2.+'
+    compile 'com.android.support:cardview-v7:21.0.0'
+    compile 'com.android.support:appcompat-v7:21.0.0'
+    compile 'com.android.support:recyclerview-v7:21.0.0'
+    compile 'com.squareup.picasso:picasso:2.3.2'
+    compile 'com.android.support:palette-v7:21.0.0'
 }
